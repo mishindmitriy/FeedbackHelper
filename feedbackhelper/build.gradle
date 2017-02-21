@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 25
@@ -27,4 +28,15 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.1.1'
     testCompile 'junit:junit:4.12'
+}
+
+
+publish {
+    groupId = 'com.github.mishindmitriy'
+    artifactId = 'feedbackhelper'
+    publishVersion = '1.0'
+    repoName = 'FeedbackHelper'
+    desc = 'A small library for collect feedback and direct positive ratings to store on Android'
+    licences = ['MIT']
+    website = 'https://github.com/mishindmitriy/FeedbackHelper'
 }

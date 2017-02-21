@@ -1,0 +1,2 @@
+# FeedbackHelper
+This is a library that helps to show the dialogues on the basis of various data (such as dialogue with the rating request after 10 days after installation). The library includes a configuration to request the rating on the expiration of a specified quantity of days or count of launches application. You can also write a configuration that will work just as you need. This will help you in the promotion of applications, quickly and easily.

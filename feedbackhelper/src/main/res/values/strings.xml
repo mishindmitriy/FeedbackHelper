@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FeedbackHelper</string>
+    <string name="rate_title">Do you enjoy using this application?</string>
+    <string name="ok">OK</string>
+    <string name="review_title">Thank you a lot!</string>
+    <string name="review_message">Could you help us by submitting positive review in Play Market?\nWe rely on your help!</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="feedback_title">Feedback</string>
+    <string name="feedback_message">Tell us about your problem</string>
+    <string name="send">Send</string>
+    <string name="cancel">Cancel</string>
+    <string name="never">Never</string>
+    <string name="later">Later</string>
+</resources>

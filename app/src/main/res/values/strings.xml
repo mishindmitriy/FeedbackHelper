@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FeedbackHelper</string>
+    <string name="rate">Rate</string>
+    <string name="feedback">Feedback</string>
+    <string name="rating_with_feedback_set_template" formatted="false">Rating set: %.0f; Feedback: %s</string>
+    <string name="rating_set_template" formatted="false">Rating set: %.0f</string>
+    <string name="feedback_set_template" formatted="false">Feedback set: %s</string>
+    <string name="rateWithFeedback">Rate with feedback</string>
+    <string name="data_template" formatted="false">Launch count: %d;\nRating value: %d;</string>
+    <string name="reset">Reset</string>
+    <string name="share_title">Can you share this app for your friends?</string>
+</resources>

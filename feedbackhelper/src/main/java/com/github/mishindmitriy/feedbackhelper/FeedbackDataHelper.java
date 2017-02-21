@@ -16,8 +16,8 @@ public class FeedbackDataHelper {
     public static final String KEY_RATING = "rating_value";
     public static final String KEY_LAUNCH_COUNT = "launch_count";
     public static final String KEY_RATING_SET_TIMESTAMP = "rating_set_timestamp";
-
     public static final String KEY_NEVER_SHOW_RATING_ALERT = "never_show_rating_alert";
+    private static final String KEY_FEEDBACK = "feedback";
     private static FeedbackDataHelper instance;
     private final SharedPreferences prefs;
 
@@ -105,5 +105,13 @@ public class FeedbackDataHelper {
                 .remove(KEY_RATING)
                 .remove(KEY_RATING_SET_TIMESTAMP)
                 .apply();
+    }
+
+    public String getFeedback() {
+        return prefs.getString(KEY_FEEDBACK, "");
+    }
+
+    public void setFeedback(String text) {
+        prefs.edit().putString(KEY_FEEDBACK, text).apply();
     }
 }

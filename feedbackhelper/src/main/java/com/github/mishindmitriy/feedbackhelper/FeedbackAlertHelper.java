@@ -146,6 +146,7 @@ public class FeedbackAlertHelper {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         if (editText.getText().length() == 0) return;
+                        dataHelper.setFeedback(editText.getText().toString());
                         if (feedbackListener != null) {
                             feedbackListener.onFeedbackSubmit(editText.getText().toString());
                         }

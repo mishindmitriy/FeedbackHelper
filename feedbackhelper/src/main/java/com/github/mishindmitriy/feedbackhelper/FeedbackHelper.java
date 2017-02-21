@@ -131,6 +131,8 @@ public class FeedbackHelper {
             return this;
         }
 
+        //if debug=true, method showAlert in ConfigCallback will be called always when
+        // application resumed, and method shouldShowAlert will not be called
         public InitBuilder setDebug(boolean debug) {
             this.debug = debug;
             return this;

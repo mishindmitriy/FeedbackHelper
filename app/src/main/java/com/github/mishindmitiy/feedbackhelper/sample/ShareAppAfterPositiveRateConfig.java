@@ -62,7 +62,8 @@ public class ShareAppAfterPositiveRateConfig extends BaseConfig {
 
     @Override
     public void onAppResumed() {
-        if (FeedbackDataHelper.get().ratingNotSet() || shareDialogIsShowed()) return;
+        if (FeedbackDataHelper.get().ratingNotSet() || shareDialogIsShowed()
+                || !ratingIsPositive()) return;
         FeedbackDataHelper.get().getSharedPreferences().edit()
                 .putInt(
                         KEY_LAUNCH_COUNT_AFTER_RATE,
@@ -78,6 +79,11 @@ public class ShareAppAfterPositiveRateConfig extends BaseConfig {
 
     @Override
     public boolean shouldShowAlert() {
-        return !shareDialogIsShowed() && getAppStartCountAfterRatingSet() >= appStartAfterRatingSet;
+        return !shareDialogIsShowed() && getAppStartCountAfterRatingSet() >= appStartAfterRatingSet
+                && ratingIsPositive();
+    }
+
+    private boolean ratingIsPositive() {
+        return getDataHelper().getRatingValue() >= 4;
     }
 }
